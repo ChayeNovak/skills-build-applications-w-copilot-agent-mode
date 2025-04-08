@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Add the codespace Django REST API endpoint suffix
+CODESPACE_URL = "https://miniature-space-fiesta-499pqr4g5v3jgjj-8000.app.github.dev"
+
 
 # Application definition
 
