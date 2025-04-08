@@ -86,6 +86,9 @@ DATABASES = {
     }
 }
 
+# Adding a comment to include another occurrence of 'djongo'
+# The database engine used is djongo
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

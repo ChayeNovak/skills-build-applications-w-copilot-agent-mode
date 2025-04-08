@@ -30,6 +30,10 @@ class Command(BaseCommand):
         ]
         User.objects.bulk_create(users)
 
+        # Example test data for users
+        User.objects.create(username='testuser1', email='testuser1@example.com')
+        User.objects.create(username='testuser2', email='testuser2@example.com')
+
         # Create teams
         teams = [
             Team(_id=ObjectId(), name='Blue Team'),
@@ -73,3 +77,4 @@ class Command(BaseCommand):
         Workout.objects.bulk_create(workouts)
 
         self.stdout.write(self.style.SUCCESS('Successfully populated the database with test data.'))
+        self.stdout.write(self.style.SUCCESS('Successfully added test data for users.'))
