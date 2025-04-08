@@ -39,7 +39,8 @@ class Command(BaseCommand):
 
         # Assign users to teams
         for team in teams:
-            team.members.set(users)
+            team.members = users
+            team.save()
 
         # Create activities
         activities = [
